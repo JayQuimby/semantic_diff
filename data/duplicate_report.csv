@@ -1,0 +1,8 @@
+Index_A,Index_B,Score,Title_A,Title_B
+0,1,0.9534,Exploring the Depths of the Ocean,Exploring the Depths of the Ocean
+0,2,0.9108,Exploring the Depths of the Ocean,Delving into Oceanic Depths
+0,3,0.9223,Exploring the Depths of the Ocean,Understanding Oceanic Ecosystems
+1,2,0.8985,Exploring the Depths of the Ocean,Delving into Oceanic Depths
+1,3,0.8977,Exploring the Depths of the Ocean,Understanding Oceanic Ecosystems
+7,8,0.9100,Introduction to Machine Learning,Getting Started with Machine Learning
+7,9,0.8632,Introduction to Machine Learning,The Basics of ML
