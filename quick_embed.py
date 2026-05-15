@@ -21,8 +21,9 @@ MAX_LENGTH = 512
 # Embedding & Search Engine
 # --------------------------------------------------------------------------- #
 class SemanticEngine:
-    def __init__(self, model_name: str = "BAAI/bge-small-en-v1.5"):
-        self.tokenizer = Tokenizer.from_pretrained(model_name)
+    def __init__(self):
+        tokenizer_path = MODEL_DIR / "tokenizer.json"
+        self.tokenizer = Tokenizer.from_file(str(tokenizer_path))
         self.tokenizer.enable_padding(pad_id=0, pad_token="[PAD]", length=MAX_LENGTH)
         self.tokenizer.enable_truncation(max_length=MAX_LENGTH)
         self.session = ort.InferenceSession(str(ONNX_MODEL))
